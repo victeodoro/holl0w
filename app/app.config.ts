@@ -3,6 +3,7 @@ export default defineAppConfig({
     colors: {
       brand: 'brand',
       accent: 'accent',
+      paragraph: 'paragraph',
       background: 'background'
     }
   }
