@@ -1,16 +1,7 @@
 <template>
-    <header class="py-2 px-16">
+    <header class="py-2 px-10">
         <nav class="flex justify-between items-center">
-            <div class="">
-                <NuxtLink
-                    href="/"
-                >
-                    <NuxtImg 
-                        src="/img/logo.png"
-                        class="h-20 w-auto"
-                    />
-                </NuxtLink>
-            </div>
+            <AppHeaderLogo />
 
             <ul class="flex gap-12">
                 <li>
