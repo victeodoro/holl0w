@@ -2,7 +2,14 @@
 @import "@nuxt/ui";
 
 @theme static {
+    --font-sans: ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+
+    --font-serif: "Literata", serif;
+
     --color-brand-500: #009168;
     --color-accent-500: #c04a6a;
-    --color-background-500: #FEFCE8;
+    --color-background-500: #F6F5F1;
 }
