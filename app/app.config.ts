@@ -4,7 +4,9 @@ export default defineAppConfig({
       brand: 'brand',
       accent: 'accent',
       paragraph: 'paragraph',
-      background: 'background'
+      description: 'description',
+      background: 'background',
+      perimeter: 'perimeter',
     }
   }
 })

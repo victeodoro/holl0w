@@ -19,7 +19,9 @@ export default defineNuxtConfig({
         'brand',
         'accent',
         'paragraph',
+        'description',
         'background',
+        'perimeter'
       ]
     }
   }

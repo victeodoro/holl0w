@@ -9,8 +9,10 @@
 
     --font-serif: "Literata", serif;
 
-    --color-brand-500: #639F6C;
-    --color-accent-500: #c04a6a;
-    --color-paragraph-500: #211F1D;
-    --color-background-500: #F6F5F1;
+    --color-brand: #639F6C;
+    --color-accent: #c04a6a;
+    --color-paragraph: #211F1D;
+    --color-description: #A1A5BC;
+    --color-background: #F6F5F1;
+    --color-perimeter: #D4D6DA;
 }
