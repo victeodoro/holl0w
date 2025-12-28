@@ -108,7 +108,7 @@
                 </g>
 
                 <!-- Signature -->
-                <g class="stroke-brand stroke-50">
+                <g class="stroke-paragraph stroke-25">
                     <path
                         d="M4600 3778 c-19 -5 -46 -18 -60 -29 -23 -19 -22 -18 20 2 26 13 76
                         25 120 29 l75 7 -60 1 c-33 0 -76 -4 -95 -10z"
