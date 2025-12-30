@@ -6,7 +6,7 @@
             <ul class="flex gap-12">
                 <li>
                     <NuxtLink 
-                        href="/"
+                        to="#garden"
                         class=
                             "
                             text-paragraph duration-300 transition cursor-pointer hover:text-brand
@@ -24,17 +24,17 @@
                 
                 <li>
                     <NuxtLink 
-                    href="/contact"
-                    class=
-                        "
-                        text-paragraph duration-300 transition cursor-pointer hover:text-brand
-                        relative inline-block pb-1
-                        bg-[linear-gradient(var(--color-accent),var(--color-accent))]
-                        bg-no-repeat bg-left-bottom
-                        bg-[length:0_2px] hover:bg-[length:100%_2px]
-                        focus-visible:bg-[length:100%_2px]
-                        transition-[background-size] duration-200 ease-out
-                        "
+                        to="#contact"
+                        class=
+                            "
+                            text-paragraph duration-300 transition cursor-pointer hover:text-brand
+                            relative inline-block pb-1
+                            bg-[linear-gradient(var(--color-accent),var(--color-accent))]
+                            bg-no-repeat bg-left-bottom
+                            bg-[length:0_2px] hover:bg-[length:100%_2px]
+                            focus-visible:bg-[length:100%_2px]
+                            transition-[background-size] duration-200 ease-out
+                            "
                     >
                         Contato
                     </NuxtLink>

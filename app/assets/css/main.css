@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
 @theme static {
     --font-sans: ui-sans-serif, system-ui, -apple-system,
         BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,

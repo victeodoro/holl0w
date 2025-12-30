@@ -1,5 +1,5 @@
 <template>
-    <section class="flex justify-between items-center py-24 border-t border-perimeter">
+    <section id="contact" class="flex justify-between items-center py-24 border-t border-perimeter">
         <div class="flex flex-col">
             <h2 class="text-2xl text-paragraph font-light mb-6">Deseja manter contato?</h2>
             <ul class="flex gap-5 mb-2">
@@ -23,8 +23,22 @@
         </div>
 
         <ul class="flex flex-col gap-3">
-            <li class="text-paragraph font-light duration-200 transition-colors cursor-pointer hover:text-accent hover:underline">O Jardim</li>
-            <li class="text-paragraph font-light duration-200 transition-colors cursor-pointer hover:text-accent hover:underline">Contato</li>
+            <li>
+                <NuxtLink 
+                    to="#garden"
+                    class="text-paragraph font-light duration-200 transition-colors cursor-pointer hover:text-accent hover:underline"
+                >
+                    O Jardim
+                </NuxtLink>
+            </li>
+            <li>
+                <NuxtLink 
+                    to="#contact"
+                    class="text-paragraph font-light duration-200 transition-colors cursor-pointer hover:text-accent hover:underline"
+                >
+                    Contato
+                </NuxtLink>
+            </li>
         </ul>
     </section>
 </template>
