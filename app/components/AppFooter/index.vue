@@ -26,7 +26,16 @@
             <li>
                 <NuxtLink 
                     to="#garden"
-                    class="text-paragraph font-light duration-200 transition-colors cursor-pointer hover:text-accent hover:underline"
+                    class=
+                        "
+                        text-paragraph font-light duration-300 transition cursor-pointer
+                        relative inline-block pb-1
+                        bg-[linear-gradient(var(--color-accent),var(--color-accent))]
+                        bg-no-repeat bg-left-bottom
+                        bg-[length:0_2px] hover:bg-[length:100%_2px]
+                        focus-visible:bg-[length:100%_2px]
+                        transition-[background-size] duration-200 ease-out
+                        "
                 >
                     O Jardim
                 </NuxtLink>
@@ -34,7 +43,16 @@
             <li>
                 <NuxtLink 
                     to="#contact"
-                    class="text-paragraph font-light duration-200 transition-colors cursor-pointer hover:text-accent hover:underline"
+                    class=
+                        "
+                        text-paragraph font-light duration-300 transition cursor-pointer
+                        relative inline-block pb-1
+                        bg-[linear-gradient(var(--color-accent),var(--color-accent))]
+                        bg-no-repeat bg-left-bottom
+                        bg-[length:0_2px] hover:bg-[length:100%_2px]
+                        focus-visible:bg-[length:100%_2px]
+                        transition-[background-size] duration-200 ease-out
+                        "
                 >
                     Contato
                 </NuxtLink>

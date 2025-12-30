@@ -9,7 +9,7 @@
                         to="#garden"
                         class=
                             "
-                            text-paragraph duration-300 transition cursor-pointer hover:text-brand
+                            text-paragraph duration-300 transition cursor-pointer
                             relative inline-block pb-1
                             bg-[linear-gradient(var(--color-accent),var(--color-accent))]
                             bg-no-repeat bg-left-bottom
@@ -27,7 +27,7 @@
                         to="#contact"
                         class=
                             "
-                            text-paragraph duration-300 transition cursor-pointer hover:text-brand
+                            text-paragraph duration-300 transition cursor-pointer
                             relative inline-block pb-1
                             bg-[linear-gradient(var(--color-accent),var(--color-accent))]
                             bg-no-repeat bg-left-bottom
