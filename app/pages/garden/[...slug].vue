@@ -65,7 +65,7 @@
             </section>
 
             <article 
-                class="prose prose-invert max-w-none"
+                class="prose prose-invert max-w-none    "
             >
                 <ContentRenderer :value="doc" />
             </article>

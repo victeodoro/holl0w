@@ -11,7 +11,7 @@ This website is part of a life project I decided to build in 2026. Since 2023 (w
 </p>
 
 <p class="article-paragraph">
-It’s almost funny to think that I spent two full years waiting for that to happen without taking any real action. That is, until one random day, when I stumbled upon the concept of <span class="article-highlight-1">digital gardens</span>.
+It’s almost funny to think that I spent two full years waiting for that to happen without taking any real action. That is, until one random day, when I stumbled upon the concept of <span class="article-highlight">digital gardens</span>.
 </p>
 
 <p class="article-paragraph">
@@ -33,7 +33,7 @@ Nuxt is the main framework behind this website. I chose it mostly because it’s
 </p>
 
 <p class="article-paragraph">
-I used <span class="article-highlight-1">Nuxt Content</span> to manage Markdown files, styled the entire application using <span class="article-highlight-1">Nuxt UI</span> along with the built-in <span class="article-highlight-1">TailwindCSS bundle</span> (theme and color management were probably the features I used the most), and handled SEO through Nuxt’s static generation using the <span class="article-code-line">--generate</span> option available in Nuxt 4.
+I used <span class="article-highlight">Nuxt Content</span> to manage Markdown files, styled the entire application using <span class="article-highlight">Nuxt UI</span> along with the built-in <span class="article-highlight">TailwindCSS bundle</span> (theme and color management were probably the features I used the most), and handled SEO through Nuxt’s static generation using the <span class="article-code-line">--generate</span> option available in Nuxt 4.
 </p>
 
 <p class="article-paragraph">
@@ -47,7 +47,7 @@ Writing
 </h2>
 
 <p class="article-paragraph">
-For writing, I follow the setup recommended by Odysseas in the video mentioned earlier: <span class="article-highlight-1">Obsidian</span>, with a few folders dedicated to raw notes and another for finished articles. I usually only publish completed pieces here or anything longer than three or four paragraphs.
+For writing, I follow the setup recommended by Odysseas in the video mentioned earlier: <span class="article-highlight">Obsidian</span>, with a few folders dedicated to raw notes and another for finished articles. I usually only publish completed pieces here or anything longer than three or four paragraphs.
 </p>
 
 <p class="article-paragraph">
@@ -59,7 +59,7 @@ When publishing, I take the article’s content and break it into blocks inside 
 </p>
 
 <p class="article-paragraph">
-Clearly, this isn’t the most elegant approach, but I like it. It forces me to revisit the text multiple times, refine it, and gives me full control over how each paragraph is visually consumed by the reader. I didn’t need MDX or any additional tooling, since <span class="article-highlight-1">Nuxt Content</span> already allows enough flexibility when working with Markdown files. That was yet another reason for choosing this framework.
+Clearly, this isn’t the most elegant approach, but I like it. It forces me to revisit the text multiple times, refine it, and gives me full control over how each paragraph is visually consumed by the reader. I didn’t need MDX or any additional tooling, since <span class="article-highlight">Nuxt Content</span> already allows enough flexibility when working with Markdown files. That was yet another reason for choosing this framework.
 </p>
 
 -- - 
@@ -73,11 +73,28 @@ As mentioned earlier, I drew a lot of inspiration from Maggie’s design work, w
 </p>
 
 <p class="article-paragraph">
-The logo itself is inspired by the <span class="article-highlight-1">New Dawn rose</span>, a beautiful type of rose that reminds me of a garden located a street above my house. That garden didn’t necessarily have this exact rose, but rather another very similar flower whose name I never managed to discover.
+The logo itself is inspired by the <span class="article-highlight">New Dawn rose</span>, a beautiful type of rose that reminds me of a garden located a street above my house. That garden didn’t necessarily have this exact rose, but rather another very similar flower whose name I never managed to discover.
 </p>
 
-<img class="w-[50%]" src="/img/articles/colophon/new-dawn-rose.png"/>
+<img class="article-image" src="/img/articles/colophon/new-dawn-rose.png"/>
 
 <p class="article-paragraph">
-For typography, I used <span class="article-highlight-1">Noto Sans</span> throughout most of the application, occasionally mixing it with  <span class="article-highlight-1">Noto Serif</span>. I felt that the serif font added a subtle layer of character to titles and, when used sparingly, even to some paragraphs.
+For typography, I used <span class="article-highlight">Noto Sans</span> throughout most of the application, occasionally mixing it with  <span class="article-highlight">Noto Serif</span>. I felt that the serif font added a subtle layer of character to titles and, when used sparingly, even to some paragraphs.
 </p>
+
+-- - 
+
+<h2 class="article-title-1">
+In Progress
+</h2>
+
+<p class="article-paragraph">
+There are several things I still want to add to this digital garden. Here are a few ideas I’ve been thinking about:
+</p>
+
+<ul class="article-list">
+<li class="article-list-item">A tag-based search mechanism</li>
+<li class="article-list-item">Different types of writing formats. For example, essays about books or music versus deeply technical articles about topics like the Linux kernel</li>
+<li class="article-list-item">Improving the homepage. It’s nice enough for now, but once there are more articles, I’d like to present them in a richer way, perhaps with background imagery, pagination, and display limits</li>
+<li class="article-list-item">Translations into other languages. At the moment, the entire garden is in English, but the idea is to eventually support Brazilian Portuguese as well</li>
+</ul>

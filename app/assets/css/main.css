@@ -21,26 +21,48 @@
 
 @layer utilities {
     /* Paragraphs */
+
     .article-paragraph {
         @apply text-[1.3rem] font-serif font-normal leading-9 my-10 text-paragraph text-justify;
     }
 
     /* Titles */
+
     .article-title-1 {
         @apply text-xl uppercase leading-relaxed my-5 font-medium text-justify text-brand;
     }
 
     /* Highlights */
-    .article-highlight-1 {
+
+    .article-highlight {
         @apply text-brand font-medium
     }
+
+    /* Code snippets */
 
     .article-code-line {
         @apply bg-stone-100 p-1 rounded-md tracking-wide italic
     }
 
     /* Links */
+
     .article-external-link {
         @apply text-brand underline border-none
+    }
+
+    /* Images */
+
+    .article-image {
+        @apply max-w-none w-[75%] mx-auto
+    }
+
+    /* Lists and items */
+
+    .article-list {
+        @apply list-disc marker:text-brand
+    }
+
+    .article-list-item { 
+        @apply text-[1.3rem] font-serif font-normal leading-8 my-5 text-paragraph text-justify;
     }
 }
