@@ -16,6 +16,11 @@ export default defineNuxtConfig({
       ] 
     }
   },
+  content: {
+    renderer: {
+      anchorLinks: false
+    }
+  },
   ui: {
     theme: {
       colors: [

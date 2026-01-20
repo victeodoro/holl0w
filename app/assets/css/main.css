@@ -29,4 +29,18 @@
     .article-title-1 {
         @apply text-xl uppercase leading-relaxed my-5 font-medium text-justify text-brand;
     }
+
+    /* Highlights */
+    .article-highlight-1 {
+        @apply text-brand font-medium
+    }
+
+    .article-code-line {
+        @apply bg-stone-100 p-1 rounded-md tracking-wide italic
+    }
+
+    /* Links */
+    .article-external-link {
+        @apply text-brand underline border-none
+    }
 }
