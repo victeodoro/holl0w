@@ -4,15 +4,16 @@ import { z } from 'zod'
 
 export default defineContentConfig({
   collections: {
-    garden: defineCollection({
+    posts: defineCollection({
       type: 'page',
-      source: 'garden/**',
+      source: 'posts/**',
       schema: z.object({
         title: z.string(),
-        description: z.string().optional(),
         date: z.string(),
         type: z.string(),
-        tags: z.array(z.string()).optional()
+        description: z.string(),
+        tags: z.array(z.string()).optional(),
+        img: z.array(z.string()).optional()
       })
     })
   }

@@ -3,12 +3,12 @@
 
     const path = computed(() => {
         const slug = Array.isArray(route.params.slug) ? route.params.slug : [route.params.slug]
-        return `/garden/${slug.filter(Boolean).join('/')}`
+        return `/posts/${slug.filter(Boolean).join('/')}`
     })
 
     const { data, pending, error } = await useAsyncData(
-        () => `garden-doc:${path.value}`,
-        () => queryCollection('garden').where('path', '=', path.value).first(),
+        () => `posts-doc:${path.value}`,
+        () => queryCollection('posts').where('path', '=', path.value).first(),
         { watch: [path] }
     )
 
@@ -21,51 +21,62 @@
     })
 
     useSeoMeta({
-        title: () => doc.value?.title ?? 'garden',
+        title: () => doc.value?.title ?? 'posts',
         description: () => doc.value?.description ?? ''
     })
 </script>
 
 <template>
     <div class="max-w-4xl mx-auto p-6">
-        <div v-if="pending" class="opacity-60">carregando…</div>
+        <div v-if="pending" class="opacity-60">Loading...</div>
 
         <template v-else-if="doc">
             <section class="flex flex-col gap-8 mb-24">
                 
                 <div class="flex flex-col">
-                    <h3 class="uppercase text-brand font-medium">
+                    <NuxtLink
+                        to="/"
+                        class="text-cyan-brand underline w-fit flex flex items-center gap-1 p-2 cursor-pointer hover:text-cyan-brand/60"
+                    >   
+                        <UIcon name="i-mdi-chevron-double-left" />
+                        <span>127.0.0.1</span>
+                    </NuxtLink>
+
+                    <h3 class="uppercase text-cyan-brand text-sm">
                         {{ doc.type }}
                     </h3>
 
-                    <h1 class="text-6xl font-normal font-serif text-paragraph leading-tight">
+                    <h1 class="text-3xl lg:text-6xl lg:font-bold text-white-brand/90 leading-tight">
                         {{ doc.title }}
                     </h1>
 
-                    <p v-if="doc.description" class="text-paragraph text-2xl font-thin mt-4">
+                    <p v-if="doc.description" class="text-cyan-brand text-sm lg:text-2xl mt-4">
                         {{ doc.description }}
                     </p>
                 </div>
 
-                <hr class="text-perimeter">
+                <hr>
 
                 <div class="flex justify-between items-center">
-                    <div v-if="doc.tags?.length" class="flex flex-wrap gap-6">
+                    <div v-if="doc.tags?.length" class="flex flex-wrap gap-1 lg:gap-6">
                         <span
                             v-for="tag in doc.tags"
                             :key="tag"
-                            class="text-brand font-normal"
+                            class="text-cyan-brand"
                         >
                             {{ tag }}
                         </span>
                     </div>
 
-                    <p class="text-paragraph font-normal">{{ doc.date }}</p>
+                    <p class="text-cyan-brand">{{ doc.date }}</p>
                 </div>
             </section>
 
             <article 
-                class="prose prose-invert max-w-none    "
+                class="
+                    prose prose-invert prose-headings:text-white-brand
+                    max-w-none
+                "
             >
                 <ContentRenderer :value="doc" />
             </article>

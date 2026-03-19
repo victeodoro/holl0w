@@ -1,11 +1,10 @@
 export default defineAppConfig({
   ui: {
     colors: {
-      brand: 'brand',
-      paragraph: 'paragraph',
-      description: 'description',
-      background: 'background',
-      perimeter: 'perimeter',
+      'cyan-brand': 'cyan-brand',
+      'white-brand': 'white-brand',
+      'black-brand': 'black-brand',
+      'dark-blue-brand': 'dark-blue-brand',
     }
   }
 })

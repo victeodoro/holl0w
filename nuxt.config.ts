@@ -9,10 +9,9 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   app: {
     head: {
-      title: 'Victor Teodoro',
+      title: 'holl0w',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
       ] 
     }
   },
@@ -24,18 +23,16 @@ export default defineNuxtConfig({
   ui: {
     theme: {
       colors: [
-        'brand',
-        'paragraph',
-        'description',
-        'background',
-        'perimeter'
+        'cyan-brand',
+        'white-brand',
+        'black-brand',
+        'dark-blue-brand'
       ]
     }
   },
   fonts: {
     families: [
-      { name: 'Noto Sans', provider: 'google', weights: ['100 900'] },
-      { name: 'Noto Serif', provider: 'google', weights: ['100 900'] },
+      { name: 'Fira Mono', provider: 'google', weights: ['100 900'] },
     ]
   }
 })
