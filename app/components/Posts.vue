@@ -2,6 +2,7 @@
     const { data: posts } = await useAsyncData('posts-list', () =>
         queryCollection('posts')
         .where('path', 'LIKE', '/posts/%')
+        .order('date', 'DESC')
         .select('path', 'title', 'description', 'type', 'date', 'img')
         .limit(5)
         .all()
